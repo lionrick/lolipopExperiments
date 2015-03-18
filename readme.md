@@ -5,8 +5,9 @@ This is a simple bootstrap project with some new features of Android Lollipop wi
 - basic setup of toolbar
 - CardView
 - RecycleView
-
-pending:
 - Floaty ActionButton
 - SwipeRefreshLayout
+
+
+pending:
 - works (trigger battery)
