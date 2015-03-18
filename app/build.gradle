@@ -25,4 +25,8 @@ dependencies {
     compile 'com.android.support:cardview-v7:22.0.0'
     compile 'com.android.support:recyclerview-v7:22.0.0'
     compile 'com.android.support:support-v4:22.0.0'
+    //SwipyRefreshLayout
+    compile 'com.github.orangegangsters:swipy:1.2.0@aar'
+    //fab
+    compile 'com.melnykov:floatingactionbutton:1.2.0'
 }

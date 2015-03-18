@@ -8,5 +8,5 @@ This is a simple bootstrap project with some new features of Android Lollipop wi
 
 pending:
 - Floaty ActionButton
-- push to update
+- SwipeRefreshLayout
 - works (trigger battery)
