@@ -1,5 +1,8 @@
 package com.example.ricardosantos.lolipopexperiments;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -15,6 +18,7 @@ public class HomeActivity extends ActionBarActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setFragmentContent(CardListFragment.newInstance(), R.id.content);
     }
 
 
@@ -38,5 +42,15 @@ public class HomeActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setFragmentContent(Fragment fragment, int resourceID) {
+
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
+            transaction.replace(resourceID, fragment).commitAllowingStateLoss();
+
     }
 }
